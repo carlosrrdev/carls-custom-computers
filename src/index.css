@@ -1,0 +1,91 @@
+:root {
+  --clr-dark-3p: hsl(152deg, 10%, 3%);
+  --clr-dark-3p90o: hsl(152deg, 10%, 3%, 90%);
+  --clr-dark-7p: hsl(152deg, 10%, 7%);
+  --clr-white: hsl(152deg, 10%, 90%);
+  --clr-primary-50p: hsl(152deg, 80%, 50%);
+  --clr-secondary-50p: hsl(281deg, 55%, 50%);
+  --clr-tertiary-50p: hsl(24deg, 83%, 50%);
+
+  --margin-sm: 0.5rem;
+  --margin-md: 1rem;
+  --margin-lg: 2rem;
+  --margin-xl: 3.5rem;
+
+  --padding-sm: 0.5rem;
+  --padding-md: 1rem;
+  --padding-lg: 2rem;
+  --padding-xl: 3.5rem;
+
+  --gap-sm: 1rem;
+  --gap-md: 1.8rem;
+  --gap-lg: 3.5rem;
+  --gap-xl: 5rem;
+
+  --border-radius-sm: 0.25rem;
+  --border-radius-md: 0.5rem;
+
+  --breakpoint: 1280px;
+}
+
+*, *::before, *::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: system-ui, sans-serif;
+  background-color: var(--clr-dark-3p);
+  color: var(--clr-white);
+}
+
+ol, ul {
+  list-style: none;
+}
+
+img, svg {
+  display: block;
+  width: 100%;
+}
+
+a, a:active, a:visited {
+  text-decoration: none;
+  color: var(--clr-white);
+}
+a:focus,a:hover {
+  color: var(--clr-primary-50p);
+}
+
+button {
+  border: none;
+  background-color: transparent;
+  color: var(--clr-white);
+  border-radius: var(--border-radius-sm);
+  cursor: pointer;
+}
+
+#site-header {
+  width: 100%;
+  position: absolute;
+  top: 0;
+  z-index: 500;
+  background-color: var(--clr-dark-3p90o);
+  backdrop-filter: blur(4px);
+}
+
+#site-main {
+  padding-top: 6rem;
+}
+
+.container {
+  width: 100%;
+  max-width: var(--breakpoint);
+  margin: 0 auto;
+  padding: var(--padding-md);
+}
+.flex-between-center {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
